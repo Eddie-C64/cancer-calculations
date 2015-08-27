@@ -1,0 +1,225 @@
+t=1
+
+t =
+
+     1
+
+t=1;
+%It supressses the value of t when called.
+f=@(x)3*x;
+f(t)
+
+ans =
+
+     3
+
+%The resutls is the value of inputing t=1 for the funtion of f(x)
+g=@(x,y)x^.2 + y^.2
+
+g = 
+
+    @(x,y)x^.2+y^.2
+
+g(1,2)
+
+ans =
+
+    2.1487
+
+g=@(x,y)x^2 + y^2
+
+g = 
+
+    @(x,y)x^2+y^2
+
+g(1,2)
+
+ans =
+
+     5
+
+
+g(3,5)
+
+ans =
+
+    34
+
+g(sqrt(5),2)
+
+ans =
+
+     9
+
+g(9)
+{Error using <a href="matlab:helpUtils.errorDocCallback('@(x,y)x^2+y^2', '', 0)" style="font-weight:bold">@(x,y)x^2+y^2</a>
+Not enough input arguments.
+} 
+%The function requires two parameters, not just one.
+help elfun
+ 
+atan(0)
+
+ans =
+
+     0
+
+sqrt(2)
+
+ans =
+
+    1.4142
+
+e^6
+{Undefined function or variable 'e'.
+} 
+exp(6)
+
+ans =
+
+  403.4288
+
+%Exercise 2
+[1; 2; 3]
+
+ans =
+
+     1
+     2
+     3
+
+[4 5 6 7 8]
+
+ans =
+
+     4     5     6     7     8
+
+[1 2 3; 4 5 6; 7 8 9]
+
+ans =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+x = eye(2)
+
+x =
+
+     1     0
+     0     1
+
+x(1,2)=5
+
+x =
+
+     1     5
+     0     1
+
+x(2,2) = x(2,2)*(-1)
+
+x =
+
+     1     5
+     0    -1
+
+y = x(1,:)
+
+y =
+
+     1     5
+
+y'
+
+ans =
+
+     1
+     5
+
+X = [x x]
+
+X =
+
+     1     5     1     5
+     0    -1     0    -1
+
+X(1,2:3)
+
+ans =
+
+     5     1
+
+X(1: end,2:3)
+
+ans =
+
+     5     1
+    -1     0
+
+ans'
+
+ans =
+
+     5    -1
+     1     0
+
+ 
+zeros(2)
+
+ans =
+
+     0     0
+     0     0
+
+ 
+zeros(1,6)
+
+ans =
+
+     0     0     0     0     0     0
+
+1:10
+
+ans =
+
+     1     2     3     4     5     6     7     8     9    10
+
+2:4:20
+
+ans =
+
+     2     6    10    14    18
+
+%Exercise 3
+A = [1,2; 3,4]
+
+A =
+
+     1     2
+     3     4
+
+B=[1 1; 1 1]
+
+B =
+
+     1     1
+     1     1
+
+A*B
+
+ans =
+
+     3     3
+     7     7
+
+ 
+A.*B
+
+ans =
+
+     1     2
+     3     4
+
+diary off
+-I have used matlab for two of my classes already; for both Differentail Equations and Applied Linear Algebra.
+-The begining of the lab was really easy, it wasn't until we got to the 'for loop' when things got a little tricky.

@@ -1,0 +1,12 @@
+%% PPLANE file %%
+
+H.name = 'pplane.pps';
+H.xvar = 'x';
+H.yvar = 'y';
+H.xder = '(b-u-((N*k)/(a*N+1))*(N))*P+((r)/(N+m))*(N)*Q';
+H.yder = '((k*N)/(a*N+1))*N*P-((r)/(N+m))*(N)+u)*Q';
+H.pname = {'b','u','k','a','r','m'};
+H.pval = {'1','1','1','1','1','1'};
+H.fieldtype = 'arrows';
+H.npts = 20;
+H.wind = [0  10   0  10];
